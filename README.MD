@@ -10,9 +10,9 @@ Configuration files are placed in _trino-config_ and _hive-metastore_ folders.
 
 Creating configmaps
 ```
-kubectl create configmap metastore-cfg --namespace minio --dry-run --from-file=hive-metastore/metastore-site.xml --from-file=hive-metastore/core-site.xml -o yaml | kubectl apply -f -
-kubectl create configmap trino-configs --namespace minio --from-file=trino-configs/
-kubectl create configmap trino-cli-startup --namespace minio --from-file=trino-cli-scripts/
+kubectl create configmap metastore-cfg --namespace trino --dry-run --from-file=hive-metastore/metastore-site.xml --from-file=hive-metastore/core-site.xml -o yaml | kubectl apply -f -
+kubectl create configmap trino-configs --namespace trino --from-file=trino-configs/
+kubectl create configmap trino-cli-startup --namespace trino --from-file=trino-cli-scripts/
 ```
 Maria DB setup
 ```
