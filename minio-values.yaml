@@ -1,0 +1,9 @@
+mode: "distributed"
+persistence:
+  size: "32Gi"
+  storageClass: "standard-rwo"
+  requests:
+    memory: "4Gi"
+defaultBucket:
+  enabled: "true"
+  name: "trino"

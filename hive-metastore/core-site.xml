@@ -1,0 +1,19 @@
+<configuration>
+    <property>
+        <name>fs.s3a.connection.ssl.enabled</name>
+	<value>false</value>
+    </property>
+    <property>
+	<name>fs.s3a.endpoint</name>
+	<value>gke-bucket-minio.minio.svc.cluster.local:9000</value>
+    </property>
+  <!--  <property>
+	<name>fs.s3a.fast.upload</name>
+	<value>true</value>
+    -->
+    <property>
+        <name>fs.s3a.path.style.access</name>
+        <value>true</value>
+        <description>Enable S3 path style access.</description>
+    </property>
+</configuration>
